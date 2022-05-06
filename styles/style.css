@@ -21,9 +21,9 @@
     /* fuentes */
     --font-sans: 'DM Sans', sans-serif;
     --font-inter: 'Inter', sans-serif;
-    --fs-md: 40rem;
-    --fs-lg: 50rem;
-    --fs-xl: 70rem;
+    --fs-md: 400;
+    --fs-lg: 500;
+    --fs-xl: 700;
 }
 
 *, *:before, *:after {
@@ -362,4 +362,151 @@ body {
     font-weight: var(--fs-lg);
     line-height: 1.8rem;
     color: #808080;
+}
+
+.section-container__img {
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    height: 387px;
+    margin: 0 auto;
+    background-image: url('./../assets/img/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.section__title {
+    padding-top: 64px;
+    color: var(--just-white);
+    font-weight: var(--fs-xl);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.main-plans-container {
+    background-color: var(--off-white);
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans-title {
+    margin: 0 auto;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin-bottom: 50px;
+}
+
+.plans-title__title {
+    padding-top: 40px;
+    font-size: 2.4rem;
+    font-weight: var(--fs-xl);
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans-title__body {
+    padding-top: 24px;
+    color: #757575;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--fs-lg);
+}
+
+.plans-container__slaider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container__card {
+    position: relative;
+    scroll-snap-align: center;
+    background-color: var(--just-white);
+    width: 60%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 247px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    text-align: center;
+}
+
+.card-container__title {
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    font-weight: var(--fs-xl);
+    font-size: 1.2rem;
+    padding: 8px;
+    color: var(--just-white);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    top: calc(0% - 16px);
+    left: calc(50% - 60px);
+}
+
+.card__title {
+    padding-top: 31px;
+    padding-bottom: 8px;
+    font-weight: var(--fs-lg);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.card__price {
+    padding: 0;
+    font-weight: var(--fs-xl);
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    color: black;
+}
+
+.dollar-icon {
+    width: 8px;
+    height: 15px;
+    font-weight: var(--fs-lg);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-family: var(--font-inter);
+    vertical-align: 25px;
+}
+
+.card__body {
+    padding: 16px;
+    font-weight: var(--fs-lg);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #757575;
+}
+
+.primary-button {
+    width: 150px;
+    height: 48px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--off-white);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: var(--fs-xl);
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.arrow {
+    display: inline-block;
+    background-image: url(./../assets/icons/orange-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 15px;
+    vertical-align: text-bottom;
 }
